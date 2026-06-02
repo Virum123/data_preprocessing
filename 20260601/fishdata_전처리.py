@@ -65,6 +65,8 @@ print(fps)
 # fps['Width']=fps['Width'] + 5
 # fps['Height'] = fps['Height'].apply(lambda x: x + 5)
 # fps['Width'] = fps['Width'].apply(lambda x: x + 5)
+# 굳이 둘이 한 번에 하고 싶으면
+# fps[['Height', 'Width']] = fps[['Height', 'Width']] + 5 이게 제일 낫단다
 
 fps = fps.map(lambda x: x+5)
 
